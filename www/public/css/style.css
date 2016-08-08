@@ -1,0 +1,9 @@
+*{margin:0;padding:0;border:0;}
+body{font-family:helvetica,tahoma,verdana,arial,sans-serif;font-size:.75em;text-align:left;padding:15px}
+hr{height:1px;background-color:#CCC}
+.yui-g,hr{width:800px}
+.yui-g{padding:10px 10px 10px 0}
+.yui-g .yui-u{width:48%;padding:5px}
+.yui-u.first{border-right:1px solid #CCC}
+dd,h4{padding:0 0 5px 10px}
+p{padding-bottom:5px}

@@ -1,0 +1,188 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Tree test</title>
+<script src="scripts/prototype.js" type="text/javascript"></script>
+<script src="scripts/scriptaculous.js" type="text/javascript"></script>
+<script src="scripts/tafeltree.js" type="text/javascript"></script>
+<script src="scripts/tree.js" type="text/javascript"></script>
+<link href="styles/default.css" media="screen" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+
+<div id="content">
+<div id="header"><h1>tree example with ajax callback</h1><a href="index.html">View basic tree</a></div>
+<div id="test2">
+</div>
+
+</div>
+
+
+<script>
+var array = [
+    {
+        'id': '.cache',
+        'txt': '.cache',
+        'items': [
+        {
+            'id': '.dataModel',
+            'txt': '.dataModel'
+        }
+    ]
+    },
+    {
+        'id': '.project',
+        'txt': '.project'
+    },
+    {
+        'id': '.settings',
+        'txt': '.settings',
+        'items': [
+        {
+            'id': 'org.eclipse.php.core.projectOptions.prefs',
+            'txt': 'org.eclipse.php.core.projectOptions.prefs'
+        }
+    ]
+    },
+    {
+        'id': 'class.allTests.php',
+        'txt': 'class.allTests.php'
+    },
+    {
+        'id': 'class.mailManager.php',
+        'txt': 'class.mailManager.php'
+    },
+    {
+        'id': 'class.mailManagerTest.php',
+        'txt': 'class.mailManagerTest.php'
+    },
+    {
+        'id': 'panel',
+        'txt': 'panel',
+        'items': [
+        {
+            'id': 'images',
+            'txt': 'images'
+        },
+        {
+            'id': 'index.html',
+            'txt': 'index.html'
+        },
+        {
+            'id': 'scripts',
+            'txt': 'scripts'
+        },
+        {
+            'id': 'styles',
+            'txt': 'styles'
+        }
+    ]
+    },
+    {
+        'id': 'tree',
+        'txt': 'tree',
+        'items': [
+        {
+            'id': 'class.jsTree.php',
+            'txt': 'class.jsTree.php'
+        },
+        {
+            'id': 'imgs',
+            'txt': 'imgs'
+        },
+        {
+            'id': 'index.html',
+            'txt': 'index.html'
+        },
+        {
+            'id': 'index.php',
+            'txt': 'index.php'
+        },
+        {
+            'id': 'scripts',
+            'txt': 'scripts'
+        },
+        {
+            'id': 'styles',
+            'txt': 'styles'
+        },
+        {
+            'id': 'test.js',
+            'txt': 'test.js'
+        }
+    ]
+    },
+    {
+        'id': 'treetest',
+        'txt': 'treetest',
+        'items': [
+        {
+            'id': '.cvsignore',
+            'txt': '.cvsignore'
+        },
+        {
+            'id': 'CHANGELOG.txt',
+            'txt': 'CHANGELOG.txt'
+        },
+        {
+            'id': 'css',
+            'txt': 'css'
+        },
+        {
+            'id': 'doc',
+            'txt': 'doc'
+        },
+        {
+            'id': 'edit.html',
+            'txt': 'edit.html'
+        },
+        {
+            'id': 'index.html',
+            'txt': 'index.html'
+        },
+        {
+            'id': 'js',
+            'txt': 'js'
+        },
+        {
+            'id': 'open.html',
+            'txt': 'open.html'
+        },
+        {
+            'id': 'sampleEdit1.php',
+            'txt': 'sampleEdit1.php'
+        },
+        {
+            'id': 'sampleOpen1.php',
+            'txt': 'sampleOpen1.php'
+        },
+        {
+            'id': 'server',
+            'txt': 'server'
+        },
+        {
+            'id': 'tests.php',
+            'txt': 'tests.php'
+        },
+        {
+            'id': 'Tree-optimized.js',
+            'txt': 'Tree-optimized.js'
+        },
+        {
+            'id': 'Tree.js',
+            'txt': 'Tree.js'
+        },
+        {
+            'id': 'unit',
+            'txt': 'unit'
+        }
+    ]
+    }
+];
+
+Event.observe(window, 'load', function(){myTree = new Tree({id: 'test2',array: array, callbackEnable:true, callbackUrl: 'callback.php'});}, false);
+</script>
+
+</body>
+</html>
