@@ -16,7 +16,6 @@ echo '<?xml version="1.0" encoding="UTF-8"?>'; ?>
         <meta name="revised" content="Joshua Ross, <?php echo date('d-m-Y');?>"/>
         <meta http-equiv="Content-Language" content="en"/>
         <meta name="language" content="en"/>
-        <link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/2.7.0/build/grids/grids-min.css"/>
         <link rel="stylesheet" type="text/css" href="/public/css/style.css"/>
         <script type="text/javascript"><!--
         var tabIndex=0;
@@ -41,7 +40,7 @@ echo '<?xml version="1.0" encoding="UTF-8"?>'; ?>
 </script>
     </head>
     <body>
-        <div>
+        <header>
             <h1>Joshua Ross</h1>
 	    <h4>
                 <script type="text/javascript">email('joshualross', [ 'gmail', 'com' ]);</script>
@@ -50,9 +49,9 @@ echo '<?xml version="1.0" encoding="UTF-8"?>'; ?>
             <h4>
                 <address><a href="https://www.linkedin.com/in/joshualross" title="Joshua's LinkedIn Profile">LinkedIn Profile</a>
             </h4>
-        </div>
-        <div class="yui-g">
-            <div class="yui-u first">
+        </header>
+        <section>
+            <article>
                 <h3>About</h3>
                 <p>
                     I am an engineer with a strong focus in web development.  Currently working for 
@@ -67,16 +66,16 @@ echo '<?xml version="1.0" encoding="UTF-8"?>'; ?>
                     I've worked python and most recently go at Uber.
                     I am very detail oriented with an almost insatiable thirst for more information.
                 </p>
-            </div>
-            <div class="yui-u">
-                <h3>Download</h3>
-                <dl>
-                    <dt>PDF</dt>
-                    <dd><a href="/resume/Resume-JoshuaRoss.pdf" title="My Resume" tabindex="<?php echo $tabIndex++; ?>">Resume-JoshuaRoss.pdf</a></dd>
-                    <dt>DOC</dt>
-                    <dd><a href="/resume/Resume-JoshuaRoss.doc" title="My Resume" tabindex="<?php echo $tabIndex++; ?>">Resume-JoshuaRoss.doc</a></dd>
-                </dl>
-            </div>
-        </div>
+            </article>
+        </section>
+        <footer>
+            <h3>Download</h3>
+            <dl>
+                <dt>PDF</dt>
+                <dd><a href="/resume/Resume-JoshuaRoss.pdf" title="My Resume" tabindex="<?php echo $tabIndex++; ?>">Resume-JoshuaRoss.pdf</a></dd>
+                <dt>DOC</dt>
+                <dd><a href="/resume/Resume-JoshuaRoss.doc" title="My Resume" tabindex="<?php echo $tabIndex++; ?>">Resume-JoshuaRoss.doc</a></dd>
+            </dl>
+        </footer>
     </body>
 </html>
